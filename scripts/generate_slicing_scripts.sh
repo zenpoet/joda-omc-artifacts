@@ -19,8 +19,10 @@ export slice_dir=$JODA_OMC_HOME/slices
 # this is where all the generated slicing scripts go
 export gen_script_dir=$JODA_OMC_HOME/scripts/slicing_scripts
 if [ ! -d $gen_script_dir ]; then
-	mkdir -p gen_script_dir
+	mkdir -p $gen_script_dir
 fi
 
 echo "Auto-gen slicing scripts into $gen_script_dir"
 java -jar $cri_gen_jar $joda_test_dir $trace_dir $slice_dir $slicer $gen_script_dir
+
+chmod +x $gen_script_dir/*/*.sh
