@@ -23,6 +23,7 @@ java -Xmx7g -javaagent:$java_slicer_home/tracer.jar=tracefile:$TRACES/chrono_tra
 java -Xmx7g -javaagent:$java_slicer_home/tracer.jar=tracefile:$TRACES/chrono_traces/TestCopticChronology.trace  org.joda.time.chrono.TestCopticChronology
 
 java -Xmx7g -javaagent:$java_slicer_home/tracer.jar=tracefile:$TRACES/chrono_traces/TestEthiopicChronology.trace  org.joda.time.chrono.TestEthiopicChronology
+java -Xmx7g -javaagent:$java_slicer_home/tracer.jar=tracefile:$TRACES/chrono_traces/TestGregorianChronology.trace  org.joda.time.chrono.TestGregorianChronology
 
 exit 0
 
