@@ -62,3 +62,9 @@ do
 
 	fi
 done <"$tmp"
+
+# Update web site
+cd /home/stg/zenpoet.github.io
+git pull
+git commit -a -m 'Overlay OMC info'
+git push
